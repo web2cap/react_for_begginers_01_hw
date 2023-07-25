@@ -1,4 +1,4 @@
-const ColorForm = ({ squareColor, setSquareColor }) => {
+const ColorForm = ({ squareColor, setSquareColor, isDarkText, setIsDarkText }) => {
     return (
         <form
             className="colorForm"
@@ -8,11 +8,19 @@ const ColorForm = ({ squareColor, setSquareColor }) => {
             <input
                 id="color"
                 type="text"
+                autoFocus
+                required
                 role="searchbox"
                 placeholder="HTML color name"
                 value={squareColor}
                 onChange={(e) => setSquareColor(e.target.value)}
             />
+            <p>
+                <button
+                    className="togglecolor"
+                    type="button"
+                    onClick={() => setIsDarkText(!isDarkText)}
+                >Toggle text color</button></p>
         </form>
     )
 }

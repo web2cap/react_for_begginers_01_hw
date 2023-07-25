@@ -72,3 +72,13 @@ main {
   border-radius: 0.25rem;
   outline: none;
 }
+
+.togglecolor {
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
